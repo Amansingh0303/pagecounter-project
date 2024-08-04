@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2" >
+    <link rel="stylesheet" href="{% static 'mycount/css/bootstrap.css' %}">
+    <title> Page Counter </title>
+    <style>
+        h1{
+            font-family: pacifico , cursive;
+        }
+        body,html{
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container d-flex align-items-center justify-content-center h-100"> <h1 class="text-warning display-2"> Page count: <span class="text-white"> {{c}} </span>
+    </h1>
+    </div>
+    
+    
+    <script src="{% static 'mycount/js/jquery.js' %}"></script>
+    <script src="{% static 'mycount/js/popper.js' %}"></script>
+    <script src="{% static 'mycount/js/all.min.js' %}"></script>
+    <script src="{% static 'mycount/js/bootsrap.js' %}"></script>
+</body>
+</html>
